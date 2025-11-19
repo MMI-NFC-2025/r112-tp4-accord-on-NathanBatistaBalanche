@@ -6,9 +6,18 @@
     gap:20px;
 }
 
-.accordeon details {
+details {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 15px;
+}
+
+details[open] {
+    transition: 0.3s;
+}
+
+details summary {
+    list-style: none;
+    cursor: pointer;
 }
